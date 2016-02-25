@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<meta content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>Insert title here</title>
 <style>
 html,body{
@@ -14,7 +14,7 @@ height: 100%;
 position: fixed;
 width: 100%;
 background-color: #aaa;
-height: 4em;
+height: 3em;
 }
 .top-menu {
 top: 0;
@@ -23,11 +23,11 @@ top: 0;
 bottom: 0;
 }
 .main-content {
-overflow: hidden;
+overflow: auto;
 background-color: #eee;
 height:100%;
-padding-top: 4em;
-padding-bottom: 4em;
+margin-top: 3em;
+margin-bottom: 3em;
 }
 .flex {
 display:flex;
@@ -39,10 +39,9 @@ height: 100%;
 <body>
 <nav class="flex">
 	<div class="fixed top-menu"></div>
-	<div class="main-content">
-		<div style="height: 1000px;">aaa</div>
-	</div>
+	<div id="content-list" class="main-content"></div>
 	<div class="fixed bottom-menu"></div>
 </nav>
+<script src="client.js"></script>
 </body>
 </html>
